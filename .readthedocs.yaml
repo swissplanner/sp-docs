@@ -11,7 +11,7 @@ build:
 
 # Primary Builder: MkDocs (with Material theme)
 mkdocs:
-  configuration: readthedocs/mkdocs.yml
+  configuration: mkdocs.yml
 
 # Secondary Builder Option: Sphinx (if configured to use conf.py)
 # sphinx:
@@ -19,4 +19,4 @@ mkdocs:
 
 python:
   install:
-    - requirements: readthedocs/requirements.txt
+    - requirements: requirements.txt
