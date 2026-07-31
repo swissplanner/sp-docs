@@ -1,0 +1,60 @@
+site_name: Swiss Travel Planner Documentation
+site_description: Complete documentation for Swiss Travel Planner - Multi-AI Travel Budget & Itinerary Engine
+site_author: Swiss Travel Planner Team
+site_url: https://swissplanner.readthedocs.io/
+
+repo_name: swissplanner/swiss-travel-planner
+repo_url: https://github.com/swissplanner
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+
+nav:
+  - Overview: index.md
+  - Quick Start: quickstart.md
+  - Configuration: configuration.md
+  - AI Providers Integration: ai-providers.md
+  - Architecture & Engine: architecture.md
+  - Deployment & Hosting: deployment.md
+  - API Reference: api-reference.md
